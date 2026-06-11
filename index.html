@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | CS Student</title>
+    <title>Portfolio | KSRLGC</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,14 +11,12 @@
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
     <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
-    <a href="javascript:void(0)" onclick="showSection('academics')">Academic Progress</a>
+    <a href="javascript:void(0)" onclick="showSection('skills')">Skills & Competencies</a>
     <a href="javascript:void(0)" onclick="showSection('projects')">Projects</a>
     <a href="javascript:void(0)" onclick="showSection('certs')">Certifications</a>
-    <a href="javascript:void(0)" onclick="showSection('about')">About</a>
-    <a href="javascript:void(0)" onclick="showSection('publicity')">Endorsements</a>
+    <a href="javascript:void(0)" onclick="showSection('about')">About Me</a>
     <a href="javascript:void(0)" onclick="showSection('contact')">Contact</a>
 </div>
-
 
 <nav>
     <div class="nav-left">
@@ -29,65 +27,113 @@
 </nav>
 
 <main id="main-content">
-    <!-- INTERESTING HOME SECTION -->
-    <section id="home" class="hero content-section">
-        <img src="images/kiden.png" alt="Profile Picture" class="profile-pic">
-            <h1>> HELLO_WORLD</h1>
-            <p>I'm a <span class="highlight">1st Year CS Student</span> in Kampala, building a path toward **SOC Analysis**.</p>
+    
+    <!--  HOME SECTION -->
+    <section id="home" class="content-section hero-layout">
+        <div class="hero-left">
+            <img src="images/pic.png" alt="Kiden Sarah Ruth Lubang" class="profile-pic">
+        </div>
+        <div class="hero-right">
+            <h1>HELLO!</h1>
+            <p>My name is <strong>Kiden Sarah Ruth Lubang</strong>.</p>
+            <p>I am an aspiring Cybersecurity Professional based in Kampala, building a dedicated career path toward <strong>SOC Analysis</strong>.</p>
+        </div>
     </section>
-
-    <section id="academics" class="content-section">
-        <h2>Academic Progress</h2>
+    <!-- SKILLS AND COMPETENCIES -->
+     <section id="skills" class="content-section">
+        <h2>Skills & Competencies</h2>
         <div class="grade-card">
-            <span>Introduction to Computing</span>
-            <span class="mark">85%</span>
+            <span>Cloud Infrastructure Security</span>
+            <p>Applying foundational security architecture models and identity management principles using Oracle Cloud Infrastructure (OCI). </p>
         </div>
         <div class="grade-card">
             <span>Programming Fundamentals</span>
-            <span class="mark">Pending</span>
+            <p>Utilising scripting basics in Python and Javascript to automate routine tasks and parse security data files.</p>
         </div>
     </section>
 
+    <!--  PROJECTS SECTION -->
     <section id="projects" class="content-section">
         <h2>Projects</h2>
-        <div class="project-card">
+        <div class="project-card-layout">
             <h4>[PROJ_01] Home Lab Setup</h4>
             <p>Configuring a virtualized environment to monitor network traffic.</p>
         </div>
     </section>
 
+    <!--  CERTIFICATIONS SECTION -->
     <section id="certs" class="content-section">
-        <h2>Certifications</h2>
-        <p>Currently studying for Google Cybersecurity Certificate.</p>
+        <h2>Certifications & Badges</h2>
+        <p class="section-intro">Verified credentials and professional achievements completed in defensive security and cloud foundations:</p>
+        
+        <div class="cert-grid">
+            <!-- Oracle Certificate Card -->
+            <div class="cert-card-visual">
+                <div class="cert-image-wrapper">
+                    <img src="images/oci.jpeg" alt="Oracle OCI AI Foundations Certificate" class="cert-display-img">
+                </div>
+                <div class="cert-details">
+                    <h3>Oracle Cloud Infrastructure (OCI) AI Foundations</h3>
+                    <p>Issued by Oracle Academy</p>
+                </div>
+            </div>
+
+            <!-- Cisco Certificate Card -->
+            <div class="cert-card-visual">
+                <div class="cert-image-wrapper">
+                    <img src="images/cisco.jpeg" alt="Introduction to Cybersecurity Certificate" class="cert-display-img">
+                </div>
+                <div class="cert-details">
+                    <h3>Introduction to Cybersecurity</h3>
+                    <p>Issued by Cisco Networking Academy</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section id="publicity" class="content-section">
-        <h2>Endorsements</h2>
-        <p>"A dedicated student with a sharp eye for technical details." - [Sample Placeholder]</p>
-    </section>
-
-     <section id="about" class="content-section">
+    <!-- 👤 ABOUT SECTION -->
+    <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>I'm a passionate computer science student with a strong interest in cybersecurity and network analysis.</p>
+        <div class="about-content">
+            <p>I thrive in dynamic, fast-paced environments where every day brings unique challenges. I am drawn to defensive security because of the meaningful impact of protecting organizational assets and neutralizing threats.</p>
+            <p>Focused on active monitoring, risk mitigation, and threat detection, I leverage a strong foundational understanding of computer infrastructure to keep systems and environments secure. My passion lies in protective defense rather than pure software programming.</p>
+        </div>
     </section>
 
+        <!-- 📨 CONTACT SECTION -->
     <section id="contact" class="content-section">
         <h2>Get In Touch</h2>
-        <p>Feel free to reach out if you have any questions or opportunities!</p>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:your.email@example.com">lubangruth@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-            <p>WhatsApp: <a href="https://wa.me/yourphonenumber" target="_blank">+256786032443</a></p>
+        <p class="section-intro">Feel free to reach out if you have any questions or security opportunities!</p>
+        
+        <div class="contact-card-grid">
+            <div class="contact-item-box">
+                <strong>Email:</strong> 
+                <a href="mailto:lubangruth@gmail.com">lubangruth@gmail.com</a>
+            </div>
+            <div class="contact-item-box">
+                <strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/kiden-sarah-ruth-lubang-74a6ab342?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">://linkedin.com</a>
+            </div>
+            <div class="contact-item-box">
+                <strong>GitHub:</strong> 
+                <a href="https://github.com/Kiden-SOC" target="_blank">://github.com</a>
+            </div>
+            <div class="contact-item-box">
+                <strong>WhatsApp:</strong> 
+                <a href="https://wa.me/256786032443" target="_blank">+256 786 032443</a>
+            </div>
         </div>
 
-        <form id="contact-form">
+        <form id="contact-form" class="unboxed-form">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
+
+
 </main>
 
 <script src="script.js"></script>
