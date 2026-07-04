@@ -301,3 +301,18 @@ button[type="submit"]:hover {
     font-weight: bold;
     color: var(--dark);
 }
+
+.project-link{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s ease-in-out;
+    margin-top: 15px;
+    display: inline-block; 
+}
+
+.project-link:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+}
