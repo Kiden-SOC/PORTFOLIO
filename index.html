@@ -3,104 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | KSRLGC</title>
+    <title>Kiden Sarah Ruth Lubang | Aspiring SOC Analyst</title>
+    <meta name="description" content="Portfolio of Kiden Sarah Ruth Lubang, an aspiring cybersecurity professional in Kampala working toward Security Operations Centre (SOC) analysis.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
-    <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
-    <a href="javascript:void(0)" onclick="showSection('skills')">Skills & Competencies</a>
-    <a href="javascript:void(0)" onclick="showSection('projects')">Projects</a>
-    <a href="javascript:void(0)" onclick="showSection('certs')">Certifications</a>
-    <a href="javascript:void(0)" onclick="showSection('about')">About Me</a>
-    <a href="javascript:void(0)" onclick="showSection('contact')">Contact</a>
-</div>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
-<nav>
-    <div class="nav-left">
-        <button class="openbtn" onclick="toggleNav()">☰</button>
-        <div class="logo">KSRLGC</div>
-    </div>
-    <div id="date-time"></div>
-</nav>
+<!-- Top bar with visible navigation -->
+<header class="topbar">
+    <a class="logo" href="#home" data-section="home">KSRLGC</a>
+    <nav class="main-nav" aria-label="Main">
+        <a href="#home" data-section="home">Home</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#projects" data-section="projects">Projects</a>
+        <a href="#certs" data-section="certs">Certifications</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+    <div id="date-time" aria-label="Current time in Kampala"></div>
+</header>
 
 <main id="main-content">
-    
-    <!--  HOME SECTION -->
-    <section id="home" class="content-section hero-layout">
-        <div class="hero-left">
-            <img src="images/pic.png" alt="Kiden Sarah Ruth Lubang" class="profile-pic">
+
+    <!-- HOME -->
+    <section id="home" class="content-section">
+        <div class="hero">
+            <div class="hero-text">
+                <h1 class="rise" style="--d:0s">Hello!<br>I'm Kiden.</h1>
+                <p class="lead rise" style="--d:.12s">I'm <strong>Kiden Sarah Ruth Lubang</strong>, an aspiring cybersecurity professional based in Kampala, working toward a career in <strong>Security Operations Centre (SOC) analysis</strong>.</p>
+
+                <ul class="chip-list rise" style="--d:.24s" aria-label="Areas of focus">
+                    <li class="chip">Alert monitoring</li>
+                    <li class="chip">Incident response</li>
+                    <li class="chip">Vulnerability management</li>
+                    <li class="chip">Log analysis</li>
+                </ul>
+
+                <div class="hero-actions rise" style="--d:.36s">
+                    <a class="btn btn-primary" href="#projects" data-section="projects">View projects</a>
+                    <a class="btn btn-ghost" href="#contact" data-section="contact">Get in touch</a>
+                </div>
+            </div>
+
+            <figure class="hero-visual rise" style="--d:.2s">
+                <div class="photo-wrap">
+                    <img src="images/pic.png" alt="Kiden Sarah Ruth Lubang" class="profile-pic">
+                    <div class="badge"><span class="badge-dot" aria-hidden="true"></span>Open to security opportunities</div>
+                </div>
+            </figure>
         </div>
-        <div class="hero-right">
-            <h1>HELLO!</h1>
-            <p>My name is <strong>Kiden Sarah Ruth Lubang</strong>.</p>
-            <p>I am an aspiring Cybersecurity Professional based in Kampala, building a dedicated career path toward <strong>Security Operations Centre (SOC) Analysis</strong>.</p>
-        </div>
-    </section>
-    <!-- SKILLS AND COMPETENCIES -->
-     <section id="skills" class="content-section">
-        <h2>Skills & Competencies</h2>
-        <div class="grade-card">
-            <span>Artificial Intelligence and Cloud Foundations</span>
-            <p>Understanding foundational AI and Machine Learning concepts, exploring Large Language Models and identifying core infrastructure services within Oracle Cloud Infrastructure (OCI) ecosystem. </p>
-        </div>
-        <div class="grade-card">
-            <span>Programming Fundamentals</span>
-            <p>Utilising scripting basics in Python and Javascript to automate routine tasks and parse security data files.</p>
-        </div>
-        <div class="grade-card">
-            <span>Data Governance and Risk Management</span>
-            <p>Evaluating data security postures, applying data encryption and ensuring compliance with industry data privacy frameworks and enterprise governance policies.</p>
-        </div>
-        <div class="grade-card">
-            <span>Vulnerability Management</span>
-            <p>Identifying system vulnerabilities, leveraging OWASP ZAP to conduct web application scans and executing targeted remediation strategies to mitigate organisational risks.</p>
-        </div>
-        <div class="grade-card">
-            <span>System and Network Security</span>
-            <p>Configuring secure network architectures, implementing firewalls and intrusion detection systems as well as hardening operating systems to safeguard critical enterprise infrastructure.</p>
-        </div>
-        <div class="grade-card">
-            <span>Cloud Security</span>
-            <p>Evaluating cloud security postures, implementing Identity and Access Management (IAM) and securing multi-cloud environments against emerging threats using industry-standard frameworks.</p>
-        </div>
-        <div class="grade-card">
-            <span>Security Operations and Management</span>
-            <p>Monitoring security alerts using SIEM tools, analysing logs, responding to potential incidents and maintaining organisational defensive posture.</p>
-        </div>
-        <div class="grade-card">
-            <span>Incident Response and Systems Forensics</span>
-            <p>Detecting, containing and eradicating security breaches following incident response lifecycles and performing deep-dive forensic analysis on system artifacts to reconstruct malicious activities.</p>
-        </div>
-        <div class="grade-card">
-            <span>Cybersecurity</span>
-            <p>Acquiring fundamental knowledge in security principles, data privacy and threat landscapes while utilising enterprise-grade security tools and methodologies to identify vulnerabilities and protect digital assets.</p>
-        </div>
-        <div class="grade-card">
-            <span>Introduction to Networking</span>
-            <p>Designing, configuring and troubleshooting basic IPv4 and IPv6 networks, implementing essential security configurations on routers and switches and mitigating security threats using Cisco network protocals..</p>
+
+        <div class="explore rise" style="--d:.5s">
+            <a class="tile" href="#skills" data-section="skills">
+                <span class="tile-count">skill areas</span>
+                <h3>Skills &amp; Competencies</h3>
+                <p>SIEM monitoring, incident response, vulnerability management, cloud and network security.</p>
+                <span class="tile-go">View skills</span>
+            </a>
+            <a class="tile" href="#certs" data-section="certs">
+                <span class="tile-count">5+ certificates</span>
+                <h3>Certifications</h3>
+                <p>Credentials from IBM, Cisco Networking Academy and Oracle Academy.</p>
+                <span class="tile-go">View certificates</span>
+            </a>
+            <a class="tile" href="#about" data-section="about">
+                <span class="tile-count">The short version</span>
+                <h3>About me</h3>
+                <p>Why I'm drawn to defensive security and networking.</p>
+                <span class="tile-go">Read more</span>
+            </a>
         </div>
     </section>
 
-    <!--  PROJECTS SECTION -->
+    <!-- SKILLS -->
+    <section id="skills" class="content-section">
+        <h2>Skills &amp; Competencies</h2>
+
+        <h3 class="group-title">Defensive operations</h3>
+        <div class="card-grid">
+            <div class="grade-card">
+                <span>Security Operations and Management</span>
+                <p>Monitoring security alerts using SIEM tools, analysing logs, responding to potential incidents and maintaining organisational defensive posture.</p>
+            </div>
+            <div class="grade-card">
+                <span>Incident Response and Systems Forensics</span>
+                <p>Detecting, containing and eradicating security breaches following incident response lifecycles and performing deep-dive forensic analysis on system artifacts to reconstruct malicious activities.</p>
+            </div>
+            <div class="grade-card">
+                <span>Vulnerability Management</span>
+                <p>Identifying system vulnerabilities, leveraging OWASP ZAP to conduct web application scans and executing targeted remediation strategies to mitigate organisational risks.</p>
+            </div>
+            <div class="grade-card">
+                <span>System and Network Security</span>
+                <p>Configuring secure network architectures, implementing firewalls and intrusion detection systems as well as hardening operating systems to safeguard critical enterprise infrastructure.</p>
+            </div>
+        </div>
+
+        <h3 class="group-title">Cloud, data and AI</h3>
+        <div class="card-grid">
+            <div class="grade-card">
+                <span>Cloud Security</span>
+                <p>Evaluating cloud security postures, implementing Identity and Access Management (IAM) and securing multi-cloud environments against emerging threats using industry-standard frameworks.</p>
+            </div>
+            <div class="grade-card">
+                <span>Data Governance and Risk Management</span>
+                <p>Evaluating data security postures, applying data encryption and ensuring compliance with industry data privacy frameworks and enterprise governance policies.</p>
+            </div>
+            <div class="grade-card">
+                <span>Artificial Intelligence and Cloud Foundations</span>
+                <p>Understanding foundational AI and Machine Learning concepts, exploring Large Language Models and identifying core infrastructure services within the Oracle Cloud Infrastructure (OCI) ecosystem.</p>
+            </div>
+        </div>
+
+        <h3 class="group-title">Foundations</h3>
+        <div class="card-grid">
+            <div class="grade-card">
+                <span>Cybersecurity</span>
+                <p>Acquiring fundamental knowledge in security principles, data privacy and threat landscapes while utilising enterprise-grade security tools and methodologies to identify vulnerabilities and protect digital assets.</p>
+            </div>
+            <div class="grade-card">
+                <span>Introduction to Networking</span>
+                <p>Designing, configuring and troubleshooting basic IPv4 and IPv6 networks, implementing essential security configurations on routers and switches and mitigating security threats using Cisco network protocols.</p>
+            </div>
+            <div class="grade-card">
+                <span>Programming Fundamentals</span>
+                <p>Utilising scripting basics in Python and JavaScript to automate routine tasks and parse security data files.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects" class="content-section">
         <h2>Projects</h2>
-        <div class="project-card-layout">
-            <h4>[PROJ_01] Web Vulnerability Scanning</h4>
-            <p>Utilising OWASP ZAP to execute automated active and passive security scans against targeted web applications to identify vulnerabilities and document remediation steps.</p>
-            <a href="https://github.com/Kiden-SOC/SOC-Analyst-Lab/tree/main/OWASP%20ZAP%20lab" target="_blank" class="project-link">View Project</a>
+
+        <div class="card-grid">
+            <article class="project-card-layout">
+                <h4>Web Vulnerability Scanning</h4>
+                <p>Utilising OWASP ZAP to execute automated active and passive security scans against targeted web applications to identify vulnerabilities and document remediation steps.</p>
+                <ul class="chip-list chip-list-small" aria-label="Project tags">
+                    <li class="chip">OWASP ZAP</li>
+                    <li class="chip">Active scan</li>
+                    <li class="chip">Passive scan</li>
+                    <li class="chip">Remediation</li>
+                </ul>
+                <a href="https://github.com/Kiden-SOC/SOC-Analyst-Lab/tree/main/OWASP%20ZAP%20lab" target="_blank" rel="noopener" class="project-link">View project</a>
+            </article>
+
+            <article class="project-card-layout project-card-more">
+                <h4>The rest of the lab</h4>
+                <p>My SOC Analyst Lab repository on GitHub is where new exercises and write-ups are added as I complete them.</p>
+                <a href="https://github.com/Kiden-SOC/SOC-Analyst-Lab" target="_blank" rel="noopener" class="project-link">Browse the repository</a>
+            </article>
         </div>
     </section>
 
-    <!--  CERTIFICATIONS SECTION -->
+    <!-- CERTIFICATIONS -->
     <section id="certs" class="content-section">
         <h2>Certifications</h2>
-        <p class="section-intro">Verified credentials and professional achievements completed in defensive security and cloud foundations:</p>
-        
+        <p class="section-intro">Verified credentials in defensive security, networking and cloud foundations. Select any certificate to view it larger.</p>
+
         <div class="cert-grid">
-            <!-- Oracle Certificate Card -->
+
             <div class="cert-card-visual">
                 <div class="cert-image-wrapper">
                     <img src="images/oci.jpeg" alt="Oracle OCI AI Foundations Certificate" class="cert-display-img">
@@ -111,7 +180,6 @@
                 </div>
             </div>
 
-            <!-- Cisco Certificate Card -->
             <div class="cert-card-visual">
                 <div class="cert-image-wrapper">
                     <img src="images/cisco.jpeg" alt="Introduction to Cybersecurity Certificate" class="cert-display-img">
@@ -122,73 +190,48 @@
                 </div>
             </div>
 
-            <!-- GRC IBM Certificate Card -->
             <div class="cert-card-visual">
                 <div class="cert-image-wrapper">
-                    <img src="images/GRC IBM.png" alt="Governance, Risk, Compliance and Data Privacy Certificate" class="cert-display-img">
-                </div>
-                <div class="cert-details">
-                    <h3>Governance, Risk, Compliance and Data Privacy</h3>
-                    <p>Issued by IBM</p>
-                </div>
-            </div>
-
-             <!-- VM IBM Certificate Card -->
-            <div class="cert-card-visual">
-                <div class="cert-image-wrapper">
-                    <img src="images/VM IBM.png" alt="Vulnerability Management Certificate" class="cert-display-img">
-                </div>
-                <div class="cert-details">
-                    <h3>Vulnerability Management</h3>
-                    <p>Issued by IBM</p>
-                </div>
-            </div>
-
-            <!-- SN IBM Certificate Card -->
-            <div class="cert-card-visual">
-                <div class="cert-image-wrapper">
-                    <img src="images/SN IBM.png" alt="System and Network Security Certificate" class="cert-display-img">
-                </div>
-                <div class="cert-details">
-                    <h3>System and Network Security</h3>
-                    <p>Issued by IBM</p>
-                </div>
-            </div>
-
-            <!-- CS IBM Certificate Card -->
-            <div class="cert-card-visual">
-                <div class="cert-image-wrapper">
-                    <img src="images/CS IBM.png" alt="Cloud Security Certificate" class="cert-display-img">
-                </div>
-                <div class="cert-details">
-                    <h3>Cloud Security</h3>
-                    <p>Issued by IBM</p>
-                </div>
-            </div>
-
-            <!-- IRSF IBM Certificate Card -->
-            <div class="cert-card-visual">
-                <div class="cert-image-wrapper">
-                    <img src="images/IRSF IBM.pdf.png" alt="Incidence Response and System Forensics Certificate" class="cert-display-img">
-                </div>
-                <div class="cert-details">
-                    <h3>Incidence Response and System Forensics</h3>
-                    <p>Issued by IBM</p>
-                </div>
-            </div>
-
-            <!-- Cert IBM Certificate Card -->
-            <div class="cert-card-visual">
-                <div class="cert-image-wrapper">
-                    <img src="images/Cert IBM.png" alt="Cybersecurity Certificate" class="cert-display-img">
+                    <img src="images/Cert IBM.png" alt="IBM Cybersecurity Certificate" class="cert-display-img">
                 </div>
                 <div class="cert-details">
                     <h3>Cybersecurity</h3>
-                    <p>Issued by IBM</p>
+                    <p>Five certificates issued by IBM.</p>
+
+                    <details class="cert-accordion">
+                        <summary class="accordion-trigger">View the issued certificates</summary>
+                        <div class="accordion-content-grid">
+
+                            <div class="sub-cert-item">
+                                <img src="images/GRC IBM.png" alt="Governance, Risk, Compliance and Data Privacy Certificate" class="cert-display-img">
+                                <span>Governance, Risk, Compliance and Data Privacy</span>
+                            </div>
+
+                            <div class="sub-cert-item">
+                                <img src="images/VM IBM.png" alt="Vulnerability Management Certificate" class="cert-display-img">
+                                <span>Vulnerability Management</span>
+                            </div>
+
+                            <div class="sub-cert-item">
+                                <img src="images/SN IBM.png" alt="System and Network Security Certificate" class="cert-display-img">
+                                <span>System and Network Security</span>
+                            </div>
+
+                            <div class="sub-cert-item">
+                                <img src="images/CS IBM.png" alt="Cloud Security Certificate" class="cert-display-img">
+                                <span>Cloud Security</span>
+                            </div>
+
+                            <div class="sub-cert-item">
+                                <img src="images/IRSF IBM.pdf.png" alt="Incident Response and System Forensics Certificate" class="cert-display-img">
+                                <span>Incident Response and System Forensics</span>
+                            </div>
+
+                        </div>
+                    </details>
                 </div>
-            </div>  
-            
-             <!-- Cisco Certificate Card -->
+            </div>
+
             <div class="cert-card-visual">
                 <div class="cert-image-wrapper">
                     <img src="images/ITN Cisco.png" alt="Introduction to Networking Certificate" class="cert-display-img">
@@ -199,53 +242,68 @@
                 </div>
             </div>
 
-
         </div>
     </section>
 
-    <!-- 👤 ABOUT SECTION -->
+    <!-- ABOUT -->
     <section id="about" class="content-section">
         <h2>About Me</h2>
         <div class="about-content">
-            <p>I thrive in dynamic, fast-paced environments where every day brings unique challenges. I am drawn to defensive security because of the meaningful impact of protecting organizational assets and neutralizing threats.</p>
-            <p>Focused on active monitoring, risk mitigation, and threat detection, I leverage a strong foundational understanding of computer infrastructure to keep systems and environments secure. My passion lies in protective defense rather than pure software programming.</p>
+            <p>I thrive in dynamic, fast-paced environments where every day brings unique challenges. I am drawn to defensive security because of the meaningful impact of protecting organisational assets and neutralising threats.</p>
+            <p>Focused on active monitoring, risk mitigation and threat detection, I leverage a strong foundational understanding of computer infrastructure to keep systems and environments secure. My passion lies in protective defence rather than pure software programming.</p>
         </div>
     </section>
 
-        <!-- 📨 CONTACT SECTION -->
+    <!-- CONTACT -->
     <section id="contact" class="content-section">
         <h2>Get In Touch</h2>
-        <p class="section-intro">Feel free to reach out if you have any questions or security opportunities!</p>
-        
+        <p class="section-intro">Feel free to reach out if you have any questions or security opportunities.</p>
+
         <div class="contact-card-grid">
-            <div class="contact-item-box">
-                <strong>Email:</strong> 
-                <a href="mailto:lubangruth@gmail.com">lubangruth@gmail.com</a>
-            </div>
-            <div class="contact-item-box">
-                <strong>LinkedIn:</strong> 
-                <a href="https://www.linkedin.com/in/kiden-sarah-ruth-lubang-74a6ab342?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">://linkedin.com</a>
-            </div>
-            <div class="contact-item-box">
-                <strong>GitHub:</strong> 
-                <a href="https://github.com/Kiden-SOC" target="_blank">://github.com</a>
-            </div>
-            <div class="contact-item-box">
-                <strong>WhatsApp:</strong> 
-                <a href="https://wa.me/256786032443" target="_blank">+256 786 032443</a>
-            </div>
+            <a class="contact-item-box" href="mailto:lubangruth@gmail.com">
+                <strong>Email</strong>
+                <span>lubangruth@gmail.com</span>
+            </a>
+            <a class="contact-item-box" href="https://www.linkedin.com/in/kiden-sarah-ruth-lubang-74a6ab342?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener">
+                <strong>LinkedIn</strong>
+                <span>Kiden Sarah Ruth Lubang</span>
+            </a>
+            <a class="contact-item-box" href="https://github.com/Kiden-SOC" target="_blank" rel="noopener">
+                <strong>GitHub</strong>
+                <span>Kiden-SOC</span>
+            </a>
+            <a class="contact-item-box" href="https://wa.me/256786032443" target="_blank" rel="noopener">
+                <strong>WhatsApp</strong>
+                <span>+256 786 032443</span>
+            </a>
         </div>
 
         <form id="contact-form" class="unboxed-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" type="text" autocomplete="name" required>
+
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" type="email" autocomplete="email" required>
+
+            <label for="cf-message">Your message</label>
+            <textarea id="cf-message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p id="form-status" class="form-status" role="status"></p>
         </form>
     </section>
 
-
 </main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Kiden Sarah Ruth Lubang</p>
+</footer>
+
+<!-- Certificate viewer -->
+<dialog id="lightbox" aria-label="Certificate viewer">
+    <button type="button" class="lightbox-close" id="closeLightbox" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+</dialog>
 
 <script src="script.js"></script>
 </body>
